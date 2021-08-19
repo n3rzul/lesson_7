@@ -25,6 +25,8 @@
 @use "components/footer/footer";
 * {
   box-sizing: border-box;
+  
+  
 }
 a {
   text-decoration: none;
@@ -33,8 +35,8 @@ a {
 li {
   list-style: none;
 }
-h6 {
-  display: none;
+h6{
+ display: none;
 }
 .container {
   max-width: 1297px;
@@ -68,6 +70,7 @@ h6 {
 }
 
 .header {
+  
   position: relative;
   display: grid;
   align-content: center;
@@ -193,9 +196,11 @@ h6 {
 }
 .header-content__container {
   display: grid;
+  
 }
 .header-content__title {
   text-align: center;
+  
 }
 .header-content__actions {
   display: flex;
@@ -447,6 +452,7 @@ h6 {
     &__element {
       max-width: 100%;
       max-height: 480px;
+      
     }
   }
 }
@@ -598,17 +604,17 @@ h6 {
 }
 // footer
 .footer {
-  height: 251px;
+    height: 251px;
   text-align: center;
   background-color: #2d3651;
-  &__container {
-    padding-top: 40px;
+  &__container{
+      padding-top:  40px;
   }
   &__social {
     position: relative;
     display: grid;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom:50px;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     &:after {
       position: absolute;
@@ -698,12 +704,13 @@ h6 {
   .form__container {
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 @media (min-width: 992px) {
   .posts-section {
     padding-top: 100px;
   }
-  .dev-section {
+  .dev-section{
     padding-top: 100px;
     padding-bottom: 72px;
   }
@@ -716,7 +723,7 @@ h6 {
     margin-bottom: 3.6rem;
     font-size: 2.5rem;
   }
-  .dev-about__head {
+  .dev-about__head{
     font-size: 2.5rem;
   }
   .btn-first--light {
@@ -730,15 +737,15 @@ h6 {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
   }
-
+  
   .dev-inner {
     gap: 100px;
     grid-template-columns: 1fr 271px;
   }
-  .dev-about__body {
+  .dev-about__body  {
     font-size: 1.125rem;
   }
-  .dev-about__body::after {
+  .dev-about__body::after  {
     right: -50px;
   }
   .posts-inner {
@@ -751,18 +758,18 @@ h6 {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .posts-section {
+  .posts-section{
     padding-top: 80px;
     padding-bottom: 28px;
   }
-  .header {
-    display: block;
-    min-height: 768px;
-    &-content__container {
-      margin-top: 217px;
-    }
+  .header{
+      display: block;
+      min-height: 768px;
+      &-content__container{
+          margin-top: 217px;
+      }
   }
-  .blocks-inner {
+  .blocks-inner{
     grid-auto-rows: calc(46.33333vh - 67.333333px);
     padding-bottom: 30px;
   }
@@ -771,11 +778,10 @@ h6 {
     letter-spacing: 3px;
     font-weight: 200;
   }
-  .container {
-    max-width: 950px;
+  .container{
+      max-width: 950px;
   }
-  .dev-about__head,
-  .posts-head {
+  .dev-about__head, .posts-head{
     margin-bottom: 2.625rem;
     font-size: 2rem;
   }
@@ -805,27 +811,27 @@ h6 {
   }
 }
 @media (max-width: 767.8px) {
-  .header {
-    display: block;
-    min-height: 560px;
-    &-content {
-      &__container {
-        margin-top: 129px;
-      }
-      &__title {
-        margin: 0 0 31px;
-        letter-spacing: 1.8px;
-        font-weight: 200;
-      }
+    .header{
+        display: block;
+        min-height: 560px;
+        &-content{
+            &__container{
+            margin-top: 129px;
+        }
+        &__title{
+            margin: 0 0 31px;
+            letter-spacing: 1.8px;
+            font-weight: 200;
+        }
     }
-  }
-  .blocks-inner {
+}
+.blocks-inner{
     grid-auto-rows: calc(39.33333vh - 2.333333px);
     padding-bottom: 30px;
   }
-  .btn--default {
-    width: 350px;
-    margin: auto;
+  .btn--default{
+      width: 350px;
+      margin: auto;
   }
   .posts-section,
   .dev-section {
@@ -869,12 +875,12 @@ h6 {
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
-  .posts-head {
+     .posts-head {
     margin-bottom: 2.25rem;
     font-size: 1.5rem;
   }
-
-  .dev-about__head {
+  
+  .dev-about__head{
     margin-bottom: -0.75rem;
     font-size: 1.5rem;
   }
@@ -890,10 +896,10 @@ h6 {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns: 1fr 1fr;
   }
-  .dev-container {
+  .dev-container{
     max-width: 723px;
   }
-  .dev-about__body {
+  .dev-about__body{
     font-size: 16px;
     max-width: 422px;
   }
@@ -901,7 +907,7 @@ h6 {
     gap: 20px;
     grid-template-columns: 1fr 236px;
   }
-  .dev-about__body::after {
+  .dev-about__body::after  {
     right: -10px;
   }
   .form__container {
@@ -911,10 +917,10 @@ h6 {
   .form-item:nth-of-type(1) {
     grid-column: 1 / span 2;
   }
-  .form {
-    padding: 18px 0;
+  .form{
+      padding: 18px 0;
   }
-  .posts-container {
+  .posts-container{
     max-width: 725px;
   }
   .posts-inner {
@@ -928,17 +934,15 @@ h6 {
   }
 }
 @media (max-width: 575.8px) {
-  .blocks-btn,
-  .form-item .btn-first--primary {
+  .blocks-btn, .form-item .btn-first--primary{
     width: 100%;
   }
-  .dev-about__head,
-  .posts-head {
+  .dev-about__head, .posts-head {
     margin-bottom: 2.25rem;
     text-align: center;
     font-size: 1.5rem;
   }
-  .header-content__title {
+  .header-content__title{
     font-size: 30px;
     letter-spacing: 2px;
     color: #ffffff;
@@ -957,8 +961,10 @@ h6 {
   }
   .header-content__actions {
     align-items: center;
+    
+
   }
-  .header-content__actions {
+  .header-content__actions{
     flex-direction: column;
   }
   .blocks-section {
@@ -973,7 +979,7 @@ h6 {
     gap: 20px;
     grid-template-columns: 1fr;
   }
-  .dev-about__body::after {
+  .dev-about__body::after  {
     display: none;
   }
   .posts-inner {
