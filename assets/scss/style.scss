@@ -651,28 +651,19 @@ h6 {
   }
 }
 
-// .footer__social a:focus
-
-// media
-
 @media (min-width: 576px) {
   .blocks-btn {
     display: flex;
     justify-content: center;
   }
   .blocks-btn .btn--default {
-    min-width: 350px;
+    min-width: 352px;
   }
 
   .blocks-section {
     padding: 10px 10px 40px;
   }
 }
-// @media (min-height: 691px) {
-//   .blocks-inner{
-//     grid-auto-rows: calc(33.33333vh - 1.3333333px);
-//   }
-// }
 @media (min-width: 768px) {
   .header-navbar__list {
     display: grid;
