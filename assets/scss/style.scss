@@ -103,6 +103,7 @@ h6{
 .header-menu__container {
   display: grid;
   grid-template-columns: auto 1fr;
+  padding-right: 40px;
 }
 
 .header-logo {
@@ -195,6 +196,7 @@ h6{
 }
 .header-content__container {
   display: grid;
+  
 }
 .header-content__title {
   text-align: center;
@@ -602,7 +604,7 @@ h6{
 }
 // footer
 .footer {
-    height: 250px;
+    height: 251px;
   text-align: center;
   background-color: #2d3651;
   &__container{
@@ -899,7 +901,7 @@ h6{
   }
   .dev-about__body{
     font-size: 16px;
-    max-width: 423px;
+    max-width: 422px;
   }
   .dev-inner {
     gap: 20px;
@@ -959,6 +961,8 @@ h6{
   }
   .header-content__actions {
     align-items: center;
+    flex-direction: column;
+
   }
   .blocks-section {
     padding: 20px;
