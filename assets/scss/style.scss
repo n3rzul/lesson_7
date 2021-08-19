@@ -25,6 +25,8 @@
 @use "components/footer/footer";
 * {
   box-sizing: border-box;
+  
+  
 }
 a {
   text-decoration: none;
@@ -33,11 +35,14 @@ a {
 li {
   list-style: none;
 }
+h6{
+ display: none;
+}
 .container {
-  max-width: 1300px;
+  max-width: 1297px;
   margin: 0 auto;
   min-width: 320px;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .btn-first {
   display: flex;
@@ -65,10 +70,11 @@ li {
 }
 
 .header {
+  
   position: relative;
   display: grid;
   align-content: center;
-  min-height: 100vh;
+  min-height: 1080px;
   padding: 100px 0;
   color: #ffffff;
   background-color: #2d3651;
@@ -91,6 +97,7 @@ li {
   z-index: 2;
   top: 0;
   left: 0;
+  font-family: "Roboto";
   width: 100%;
 }
 .header-menu__container {
@@ -99,9 +106,13 @@ li {
 }
 
 .header-logo {
-  align-self: center;
-  letter-spacing: 0.22em;
-  font-size: 1.5rem;
+  font-size: 24px;
+  letter-spacing: 6px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
 }
 .header-logo__link {
   display: block;
@@ -114,7 +125,7 @@ li {
 .header-logo__accent {
   display: inline-block;
   margin-right: 4px;
-  padding: 14px 1px 13px 5px;
+  padding: 17px 1px 17px 1px;
   border: 3px solid #d53d27;
 }
 
@@ -179,12 +190,15 @@ li {
 .header-content {
   position: relative;
   z-index: 1;
+  margin-top: 4px;
+  font-family: "Roboto Slab";
 }
 .header-content__container {
   display: grid;
 }
 .header-content__title {
   text-align: center;
+  
 }
 .header-content__actions {
   display: flex;
@@ -196,9 +210,7 @@ li {
 
 /* header-menu */
 /* header-content */
-.header-content {
-  margin-top: 350px;
-}
+
 .header-content__text {
   font-size: 60px;
   letter-spacing: 5px;
@@ -225,7 +237,7 @@ li {
   color: #ffffff;
   font-weight: 400;
   font-family: "Roboto";
-  padding: 20px 5px;
+  padding: 18px 5px;
   text-align: center;
 }
 .header__btn {
@@ -248,15 +260,9 @@ li {
     padding: 10px 10px 40px;
   }
   &-inner {
-    gap: 10px;
     display: grid;
-    grid-template-areas:
-      "a1 a1 a2 a3"
-      "a4 a5 a5 a6"
-      "a7 a8 a9 a6";
-    grid-auto-rows: calc(33.33333vh - 13.3333333px);
-    grid-template-columns: repeat(4, 1fr);
     padding-bottom: 20px;
+    grid-auto-rows: calc(33.33333vh - 1.333333px);
   }
   &-img {
     display: grid;
@@ -397,9 +403,7 @@ li {
   &-section {
     background-color: #e5e5e5;
   }
-  &-container {
-    // padding-top: 110px;
-  }
+
   &-inner {
     display: grid;
   }
@@ -410,12 +414,11 @@ li {
     &__head {
       max-width: 360px;
       font-size: 40px;
-      letter-spacing: 4px;
+      letter-spacing: 3.8px;
       line-height: 48px;
       color: #2d3651;
       font-weight: 700;
       font-family: "Roboto Slab";
-      padding-bottom: 60px;
     }
     &__body {
       max-width: 936px;
@@ -459,7 +462,6 @@ li {
   &__container {
     display: grid;
     gap: 20px;
-    padding: 0 20px;
   }
   &-item {
     &__input {
@@ -495,7 +497,7 @@ li {
 // form-section
 // posts-section
 .posts {
-  &__head {
+  &-head {
     letter-spacing: 0.1em;
     color: #2d3651;
     font-family: "Roboto Slab", serif;
@@ -511,6 +513,7 @@ li {
       "b4 b5 b6 b6";
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    grid-auto-rows: 550px;
   }
   &-block {
     display: grid;
@@ -567,7 +570,7 @@ li {
     &__text {
       display: grid;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       align-items: center;
       align-content: center;
 
@@ -578,7 +581,7 @@ li {
         transition: color 0.5s;
         font-family: "Roboto Slab", serif;
         transition: color 0.5s;
-        margin: 18px 0;
+        margin: 14px 0;
         align-items: center;
         align-content: center;
       }
@@ -599,14 +602,17 @@ li {
 }
 // footer
 .footer {
-  padding: 50px 20px 70px;
+    height: 250px;
   text-align: center;
   background-color: #2d3651;
+  &__container{
+      padding-top:  40px;
+  }
   &__social {
     position: relative;
     display: grid;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom:50px;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     &:after {
       position: absolute;
@@ -631,7 +637,7 @@ li {
   }
   &__text span:nth-of-type(1) {
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     line-height: 20px;
     color: #637588;
     font-weight: 700;
@@ -666,11 +672,11 @@ li {
     padding: 10px 10px 40px;
   }
 }
-@media (min-height: 691px) {
-  .blocks-inner{
-    grid-auto-rows: calc(33.33333vh - 13.3333333px);
-  }
-}
+// @media (min-height: 691px) {
+//   .blocks-inner{
+//     grid-auto-rows: calc(33.33333vh - 1.3333333px);
+//   }
+// }
 @media (min-width: 768px) {
   .header-navbar__list {
     display: grid;
@@ -696,18 +702,26 @@ li {
   .form__container {
     grid-template-columns: repeat(3, 1fr);
   }
+  
 }
 @media (min-width: 992px) {
-  .posts-section,
-  .dev-section {
+  .posts-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+  }
+  .dev-section{
+    padding-top: 100px;
+    padding-bottom: 72px;
   }
   h1 {
-    font-size: 3.75rem;
+    font-size: 60px;
+    letter-spacing: 4.6px;
+    font-weight: 300;
   }
-  .dev-about__head, .posts__head {
-    margin-bottom: 3rem;
+  .posts-head {
+    margin-bottom: 3.6rem;
+    font-size: 2.5rem;
+  }
+  .dev-about__head{
     font-size: 2.5rem;
   }
   .btn-first--light {
@@ -721,6 +735,7 @@ li {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
   }
+  
   .dev-inner {
     gap: 100px;
     grid-template-columns: 1fr 271px;
@@ -737,15 +752,34 @@ li {
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
-  .posts-section,
   .dev-section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .posts-section{
+    padding-top: 80px;
+    padding-bottom: 28px;
+  }
+  .header{
+      display: block;
+      min-height: 768px;
+      &-content__container{
+          margin-top: 217px;
+      }
+  }
+  .blocks-inner{
+    grid-auto-rows: calc(46.33333vh - 67.333333px);
+    padding-bottom: 30px;
+  }
   h1 {
     font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 200;
   }
-  .dev-about__head, .posts__head{
+  .container{
+      max-width: 950px;
+  }
+  .dev-about__head, .posts-head{
     margin-bottom: 2.625rem;
     font-size: 2rem;
   }
@@ -775,6 +809,28 @@ li {
   }
 }
 @media (max-width: 767.8px) {
+    .header{
+        display: block;
+        min-height: 560px;
+        &-content{
+            &__container{
+            margin-top: 129px;
+        }
+        &__title{
+            margin: 0 0 31px;
+            letter-spacing: 1.8px;
+            font-weight: 200;
+        }
+    }
+}
+.blocks-inner{
+    grid-auto-rows: calc(39.33333vh - 2.333333px);
+    padding-bottom: 30px;
+  }
+  .btn--default{
+      width: 350px;
+      margin: auto;
+  }
   .posts-section,
   .dev-section {
     padding-top: 60px;
@@ -786,6 +842,7 @@ li {
   .header-menu {
     background-color: rgba(68, 89, 110, 0.25);
     box-shadow: -3px 3px 20px -10px black;
+    padding: 0 7px 0 20px;
   }
   .header-navbar__list {
     position: absolute;
@@ -816,8 +873,13 @@ li {
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
-  .dev-about__head, .posts__head {
+     .posts-head {
     margin-bottom: 2.25rem;
+    font-size: 1.5rem;
+  }
+  
+  .dev-about__head{
+    margin-bottom: -0.75rem;
     font-size: 1.5rem;
   }
   .btn-first--light {
@@ -832,6 +894,13 @@ li {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns: 1fr 1fr;
   }
+  .dev-container{
+    max-width: 723px;
+  }
+  .dev-about__body{
+    font-size: 16px;
+    max-width: 423px;
+  }
   .dev-inner {
     gap: 20px;
     grid-template-columns: 1fr 236px;
@@ -841,10 +910,16 @@ li {
   }
   .form__container {
     grid-template-columns: repeat(2, 1fr);
-    
+    padding: 0 22px;
   }
   .form-item:nth-of-type(1) {
     grid-column: 1 / span 2;
+  }
+  .form{
+      padding: 18px 0;
+  }
+  .posts-container{
+    max-width: 725px;
   }
   .posts-inner {
     grid-template-areas: "b1 b2" "b3 b4" "b5 b6";
@@ -860,10 +935,21 @@ li {
   .blocks-btn, .form-item .btn-first--primary{
     width: 100%;
   }
-  .dev-about__head, .posts__head {
+  .dev-about__head, .posts-head {
     margin-bottom: 2.25rem;
     text-align: center;
     font-size: 1.5rem;
+  }
+  .header-content__title{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: "Roboto Slab";
+    text-align: center;
+    max-width: 322px;
+    margin: auto;
+    margin-bottom: 20px;
   }
   .btn-first--light {
     min-width: 170px;
@@ -873,7 +959,6 @@ li {
   }
   .header-content__actions {
     align-items: center;
-    flex-direction: column;
   }
   .blocks-section {
     padding: 20px;
