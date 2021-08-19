@@ -442,7 +442,10 @@ h6 {
 .header-menu__container {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding-right: 40px;
+  max-width: 1297px;
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 0 60px 0 20px;
 }
 
 .header-logo {
@@ -1066,7 +1069,7 @@ h6 {
   }
 
   .blocks-btn .btn--default {
-    min-width: 350px;
+    min-width: 352px;
   }
 
   .blocks-section {
@@ -1198,7 +1201,8 @@ h6 {
     max-width: 950px;
   }
 
-  .dev-about__head, .posts-head {
+  .dev-about__head,
+.posts-head {
     margin-bottom: 2.625rem;
     font-size: 2rem;
   }
@@ -1249,11 +1253,11 @@ h6 {
 
   .blocks-inner {
     grid-auto-rows: calc(39.33333vh - 2.333333px);
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 
   .btn--default {
-    width: 350px;
+    width: 280px;
     margin: auto;
   }
 
@@ -1264,7 +1268,7 @@ h6 {
   }
 
   h1 {
-    font-size: 1.875rem;
+    font-size: 1.876rem;
   }
 
   .header-menu {
@@ -1314,6 +1318,11 @@ h6 {
     font-size: 1.5rem;
   }
 
+  .btn--default {
+    width: 280px;
+    margin: auto;
+  }
+
   .dev-about__head {
     margin-bottom: -0.75rem;
     font-size: 1.5rem;
@@ -1338,7 +1347,7 @@ h6 {
 
   .dev-about__body {
     font-size: 16px;
-    max-width: 423px;
+    max-width: 422px;
   }
 
   .dev-inner {
@@ -1378,11 +1387,13 @@ h6 {
   }
 }
 @media (max-width: 575.8px) {
-  .blocks-btn, .form-item .btn-first--primary {
+  .blocks-btn,
+.form-item .btn-first--primary {
     width: 100%;
   }
 
-  .dev-about__head, .posts-head {
+  .dev-about__head,
+.posts-head {
     margin-bottom: 2.25rem;
     text-align: center;
     font-size: 1.5rem;
@@ -1411,6 +1422,9 @@ h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .header-content__actions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

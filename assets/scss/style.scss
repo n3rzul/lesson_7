@@ -867,7 +867,10 @@ h6 {
     margin-bottom: 2.25rem;
     font-size: 1.5rem;
   }
-
+  .btn--default {
+    width: 280px;
+    margin: auto;
+  }
   .dev-about__head {
     margin-bottom: -0.75rem;
     font-size: 1.5rem;
@@ -925,9 +928,6 @@ h6 {
   .blocks-btn,
   .form-item .btn-first--primary {
     width: 100%;
-  }
-  .btn--default{
-      width: 280px;
   }
   .dev-about__head,
   .posts-head {
