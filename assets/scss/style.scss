@@ -961,8 +961,11 @@ h6{
   }
   .header-content__actions {
     align-items: center;
-    flex-direction: column;
+    
 
+  }
+  .header-content__actions{
+    flex-direction: column;
   }
   .blocks-section {
     padding: 20px;
