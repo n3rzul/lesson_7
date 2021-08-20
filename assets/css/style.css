@@ -370,7 +370,6 @@ h6 {
   max-width: 1297px;
   margin: 0 auto;
   min-width: 320px;
-  padding: 0 20px;
 }
 
 .btn-first {
@@ -445,7 +444,7 @@ h6 {
   max-width: 1297px;
   margin: 0 auto;
   min-width: 320px;
-  padding: 0 60px 0 20px;
+  padding: 0;
 }
 
 .header-logo {
@@ -769,14 +768,12 @@ h6 {
 }
 
 .blocks-btn {
-  max-width: 520px;
   margin: auto;
 }
 
 .btn--default {
   display: block;
   background-color: rgba(45, 54, 81, 0.8);
-  width: 350px;
   margin: auto;
   border: 2px solid transparent;
 }
@@ -1175,7 +1172,7 @@ h6 {
 
   .posts-section {
     padding-top: 80px;
-    padding-bottom: 28px;
+    padding-bottom: 0px;
   }
 
   .header {
@@ -1201,10 +1198,25 @@ h6 {
     max-width: 950px;
   }
 
-  .dev-about__head,
-.posts-head {
-    margin-bottom: 2.625rem;
+  .dev-about__head {
+    margin-bottom: 1.625rem;
     font-size: 2rem;
+    letter-spacing: 3.6px;
+    line-height: 45px;
+  }
+
+  .form-item__input {
+    padding-left: 18px;
+  }
+
+  .footer__container {
+    padding-top: 18px;
+  }
+
+  .posts-head {
+    margin-bottom: 3.25rem;
+    font-size: 2rem;
+    line-height: 0.7em;
   }
 
   .btn-first--light {
@@ -1225,7 +1237,7 @@ h6 {
 
   .dev-inner {
     gap: 40px;
-    grid-template-columns: 1fr 271px;
+    grid-template-columns: 1fr 260px;
   }
 
   .dev-about__body::after {
@@ -1256,15 +1268,14 @@ h6 {
     padding-bottom: 31px;
   }
 
-  .btn--default {
-    width: 280px;
-    margin: auto;
-  }
-
-  .posts-section,
-.dev-section {
+  .dev-section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .posts-section {
+    padding-top: 60px;
+    padding-bottom: 0;
   }
 
   h1 {
@@ -1318,11 +1329,6 @@ h6 {
     font-size: 1.5rem;
   }
 
-  .btn--default {
-    width: 280px;
-    margin: auto;
-  }
-
   .dev-about__head {
     margin-bottom: -0.75rem;
     font-size: 1.5rem;
@@ -1333,6 +1339,10 @@ h6 {
     height: 40px;
     letter-spacing: 0.05em;
     font-size: 1rem;
+  }
+
+  .footer__container {
+    padding-top: 7px;
   }
 
   .blocks-inner {
@@ -1387,16 +1397,57 @@ h6 {
   }
 }
 @media (max-width: 575.8px) {
+  .posts-section {
+    padding-top: 48px;
+  }
+
+  .posts-container {
+    max-width: 531px;
+  }
+
   .blocks-btn,
 .form-item .btn-first--primary {
     width: 100%;
   }
 
-  .dev-about__head,
-.posts-head {
+  .header {
+    min-height: 992px;
+  }
+
+  .header-menu {
+    padding: 0 17px 0 20px;
+  }
+
+  .header-content__container {
+    margin-top: 325px;
+  }
+
+  .btn--default {
+    max-width: 532px;
+  }
+
+  .posts-head {
     margin-bottom: 2.25rem;
     text-align: center;
     font-size: 1.5rem;
+  }
+
+  .dev-about__head {
+    font-size: 1.4rem;
+    max-width: 276px;
+    margin: auto;
+    letter-spacing: 3.5px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .form__container {
+    padding: 0 20px;
+  }
+
+  .form-item__input {
+    padding-left: 18px;
   }
 
   .header-content__title {
@@ -1406,9 +1457,9 @@ h6 {
     font-weight: 200;
     font-family: "Roboto Slab";
     text-align: center;
-    max-width: 322px;
+    max-width: 310px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 39px;
   }
 
   .btn-first--light {
@@ -1424,13 +1475,6 @@ h6 {
             align-items: center;
   }
 
-  .header-content__actions {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .blocks-section {
     padding: 20px;
   }
@@ -1439,11 +1483,16 @@ h6 {
     gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     grid-template-columns: 1fr;
+    padding-bottom: 20px;
   }
 
   .dev-inner {
     gap: 20px;
     grid-template-columns: 1fr;
+  }
+
+  .dev-container {
+    max-width: 530px;
   }
 
   .dev-about__body::after {
@@ -1453,5 +1502,13 @@ h6 {
   .posts-inner {
     grid-template-areas: "b1" "b2" "b3" "b4" "b5" "b6";
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    height: 210px;
+  }
+
+  .footer__container {
+    padding-top: 7px;
   }
 }
