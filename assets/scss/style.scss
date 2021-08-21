@@ -712,6 +712,8 @@ input:focus {
   }
   .posts-inner {
     grid-template-areas: "b1 b1 b2" "b3 b4 b4" "b5 b5 b6";
+
+    
     grid-template-columns: repeat(3, 1fr);
   }
 }
