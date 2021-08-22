@@ -39,14 +39,12 @@ h1 {
   font-weight: 300;
   line-height: 1.2em;
 }
-
 h2 {
   letter-spacing: 0.1em;
   color: #2d3651;
   font-family: "Roboto Slab", serif;
   line-height: 1.2em;
 }
-
 h3 {
   letter-spacing: 0.05em;
   color: #637588;
@@ -60,11 +58,9 @@ a {
 
   color: #ffffff;
 }
-
 p {
   color: #637588;
 }
-
 input:focus {
   outline: none;
 }
@@ -78,21 +74,17 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 60px;
   transition: background-color 0.5s, border-color 0.5s;
   letter-spacing: 0.1em;
-
   border-width: 2px;
   border-style: solid;
-
   font-size: 1.125rem;
 }
 .btn:hover,
 .btn:focus {
   background-color: #d66926;
 }
-
 .btn--light {
   border-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -101,7 +93,6 @@ input:focus {
   border-color: #2d3651;
   background-color: rgba(45, 54, 81, 0.8);
 }
-
 .header {
   position: relative;
   display: grid;
@@ -156,7 +147,6 @@ input:focus {
   padding: 14px 1px 13px 5px;
   border: 3px solid #d53d27;
 }
-
 .header-navbar {
   display: grid;
   align-items: center;
@@ -214,7 +204,6 @@ input:focus {
   top: 9px;
   transform: rotate(-135deg);
 }
-
 .header-content {
   position: relative;
   z-index: 1;
@@ -228,7 +217,6 @@ input:focus {
 .header-content__actions {
   display: flex;
   justify-content: center;
-
   gap: 20px;
 }
 .blocks {
@@ -243,7 +231,6 @@ input:focus {
     align-items: center;
     padding: 20px;
     justify-items: center;
-
     &:hover {
       .blocks-img__bg-img {
         transform: scale(1.1);
@@ -259,7 +246,6 @@ input:focus {
         }
       }
     }
-
     &:nth-of-type(1) {
       grid-area: a1;
     }
@@ -287,7 +273,6 @@ input:focus {
     &:nth-of-type(9) {
       grid-area: a9;
     }
-
     &__title {
       position: absolute;
       z-index: 1;
@@ -297,7 +282,6 @@ input:focus {
       left: 0;
       margin: 0;
       letter-spacing: 0.1em;
-
       &-link {
         display: flex;
         align-items: center;
@@ -307,7 +291,6 @@ input:focus {
         transition: color 0.5s;
       }
     }
-
     &:nth-of-type(1) .blocks-img__bg-img {
       background-image: url(../img/img-html.png);
     }
@@ -346,7 +329,6 @@ input:focus {
       background-position: 50% 50%;
       background-size: cover;
     }
-
     &__overlay {
       position: absolute;
       top: 0;
@@ -358,14 +340,12 @@ input:focus {
     }
   }
 }
-
 // dev-section
 .dev {
   &-section {
     letter-spacing: 0.055em;
     background-color: #e5e5e5;
   }
-
   &-inner {
     display: grid;
   }
@@ -776,10 +756,7 @@ input:focus {
     gap: 20px;
     grid-template-columns: 1fr 236px;
   }
-  /* я просто гений 
-  .dev-aboutt <----- тут две буквы t а должна быть одна я в шоке с таких ошибок p:first-of-type::after {
-    right: -10px;
-  } */
+
   .dev-about p:first-of-type::after {
     right: -10px;
   }
