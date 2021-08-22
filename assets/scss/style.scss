@@ -447,8 +447,11 @@ input:focus {
       font-size: 1.125rem;
       outline: none;
     }
+
   }
 }
+
+
 .form-item .btn--primary {
   width: 100%;
   height: 60px;
@@ -461,7 +464,16 @@ input:focus {
     background-color: #d66926;
   }
 }
-
+.form-item__input:hover,
+.form-item__input:focus {
+  border-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.form-item__input:hover::placeholder,
+.form-item__input:focus::placeholder {
+  color: #8c9bab;
+}
 // form-section
 // posts-section
 .posts {
@@ -789,7 +801,11 @@ input:focus {
     gap: 20px;
     grid-template-columns: 1fr 236px;
   }
-  .dev-aboutt p:first-of-type::after {
+  /* я просто гений 
+  .dev-aboutt <----- тут две буквы t а должна быть одна я в шоке с таких ошибок p:first-of-type::after {
+    right: -10px;
+  } */
+  .dev-about p:first-of-type::after {
     right: -10px;
   }
   .form__container {
