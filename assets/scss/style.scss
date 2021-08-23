@@ -431,6 +431,9 @@ input:focus {
 .form-item__input:focus::placeholder {
   color: #8c9bab;
 }
+.form-item__input::placeholder {
+  color: #637588;
+}
 // form-section
 // posts-section
 .posts {
